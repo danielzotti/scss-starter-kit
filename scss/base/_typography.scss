@@ -1,0 +1,141 @@
+﻿@import "../abstracts/variables";
+
+html {
+    font-family: $font-family;
+    font-size: $font-size-base;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: $font-family-title;
+    line-height: 1.2;
+    color: $font-title-color;
+    font-weight: $font-weight-extrabold;
+    margin: $margin-medium 0;
+}
+
+p {
+    font-size: $font-size-p-normal;
+    line-height: 1.3;
+    margin-top: 0;
+    margin-bottom: $margin-default;
+}
+
+a {
+    color: $link-color;
+
+    &:hover {
+        color: $link-hover-color;
+    }
+}
+
+
+ul, ol {
+    margin: $margin-default 0;
+    list-style-position: outside;
+    padding-left: $margin-default;
+    margin-left: $margin-default;
+
+    li {
+        margin-bottom: $margin-default;
+        padding-left: $margin-small;
+    }
+}
+
+
+/**umb_name:Heading 1*/
+h1 {
+    font-size: $font-size-h1;
+}
+
+/**umb_name:Heading 2*/
+h2 {
+    font-size: $font-size-h2;
+}
+
+/**umb_name:Heading 3*/
+h3 {
+    font-size: $font-size-h3;
+}
+
+/**umb_name:Heading 4*/
+h4 {
+    font-size: $font-size-h4;
+}
+
+/**umb_name:Heading 5*/
+h5 {
+    font-size: $font-size-h5;
+}
+
+/**umb_name:Heading 6*/
+h6 {
+    font-size: $font-size-h6;
+}
+
+/**umb_name:Big text*/
+.text-big {
+    font-size: $font-size-p-big;
+}
+
+/**umb_name:Small text*/
+.text-small {
+    font-size: $font-size-p-small;
+}
+
+/**umb_name:Uppercase*/
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+/**umb_name:Lowercase*/
+.text-lowercase {
+    text-transform: lowercase;
+}
+
+/**umb_name: No bold*/
+.text-no-bold {
+    font-weight:$font-weight-regular;
+}
+
+/**umb_name: Font light*/
+.text-light {
+    font-weight: $font-weight-light;
+}
+
+/**umb_name:Primary color*/
+.color-primary {
+    color:$primary;
+}
+
+/**umb_name:Secondary color*/
+.color-secondary {
+    color: $secondary;
+}
+
+/**umb_name:Tertiary color*/
+.color-tertiary{
+    color: $tertiary;
+}
+
+/**umb_name:White color*/
+.color-white {
+    color: #FFF;
+}
+
+/**umb_name:Black color*/
+.color-black {
+    color: #000;
+}
+
+/**umb_name:Float quote*/
+.float-quote {
+    border-top: 3px solid;
+    border-bottom: 3px solid;
+    margin: 10px 0;
+    font-style: italic;
+    font-weight: bold;
+    font-size: $font-size-p-normal;
+    display: block;
+}
+
+

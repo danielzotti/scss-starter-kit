@@ -1,0 +1,7 @@
+﻿@mixin font-size-scaling($font-size: 16px, $font-scaling: 0.85, $breakpoint-min: 768px) {
+    font-size: $font-size * $font-scaling;
+
+    @media(min-width:$breakpoint-min) {
+        font-size: $font-size;
+    }
+}

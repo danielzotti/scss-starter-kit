@@ -1,0 +1,58 @@
+﻿@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+* {
+    box-sizing: border-box;
+}
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html {
+    background: $bg-color;
+    color: $font-color;
+    min-width:300px;
+    @include font-size-scaling($font-size-base);
+}
+
+h1, .h1 {
+    @include font-size-scaling($font-size-h1,0.75);
+}
+h2, .h2 {
+    @include font-size-scaling($font-size-h2,0.75);
+}
+h3, .h3 {
+    @include font-size-scaling($font-size-h3,0.75);
+}
+h4, .h4 {
+    @include font-size-scaling($font-size-h4);
+}
+h5, .h5 {
+    @include font-size-scaling($font-size-h5);
+}
+h6, .h6 {
+    @include font-size-scaling($font-size-h6);
+}
+
+p {
+    @include font-size-scaling($font-size-p-normal);
+}
+
+.text-big {
+    @include font-size-scaling($font-size-p-big);
+}
+
+.text-small {
+    @include font-size-scaling($font-size-p-small);
+}
+
+img {
+    max-width:100%;
+}
+
+
+.text-no-margin {
+    margin: 0;
+    line-height: 1;
+}

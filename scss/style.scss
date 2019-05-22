@@ -1,0 +1,29 @@
+﻿/* THEME */
+// Qui vengono inserite le variabili che vanno a sovrascrivere le variabili di default
+// @import "themes/dark";
+@import "themes/default";
+
+/* ABSTRACTS */
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+/* FONTS */
+@import "base/fonts";
+
+/* VENDOR */
+@import "vendors/bootstrap";
+
+/* BASE */
+@import "base/typography";
+@import "base/base";
+
+/* COMMON */
+@import "common/section";
+@import "common/button";
+@import "common/gradients";
+
+/* COMPONENTS */
+@import "components/banner";
+
+/* PAGES */
+@import "pages/home";

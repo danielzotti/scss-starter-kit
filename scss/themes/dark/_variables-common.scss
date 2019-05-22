@@ -1,0 +1,10 @@
+﻿// MARGIN/PADDING
+$margin-default: 15px;
+$margin-small: $margin-default / 3;
+$margin-medium: $margin-default * 2;
+$margin-big: $margin-default * 4;
+$margin-extrabig: $margin-default * 6 !default;
+
+// SHADOWS AND BORDER RADIUS
+$border-radius-base: 0;
+$border-width-base: 6px;

@@ -1,0 +1,15 @@
+﻿@import "../abstracts/variables";
+
+$section-padding: 50px !default;
+$section__title-margin-bottom: 40px !default;
+
+.section {
+    padding-top: $section-padding;
+    padding-bottom: $section-padding;
+}
+
+.section__title {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: $section__title-margin-bottom;
+}
