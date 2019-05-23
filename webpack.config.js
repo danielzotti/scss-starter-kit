@@ -1,3 +1,5 @@
+const path = require('path');
+
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
@@ -6,12 +8,20 @@ const isDevelopment = process.env.NODE_ENV !== 'production'
 
 module.exports = {
     mode: isDevelopment ? 'development' : 'production',
+    entry: path.join(__dirname, '/src/index.ts'),
+    output: {
+        filename: isDevelopment ? '[name].js' : '[name].[hash].js',
+        path: path.join(__dirname, '/dist')
+    },
     module: {
-        rules: [{
+        rules: [
+            // JS
+            {
                 test: /\.js$/,
                 exclude: /node_modules/,
                 loader: 'babel-loader'
             },
+            // HTML
             {
                 test: /\.html$/,
                 exclude: /node_modules/,
@@ -22,8 +32,9 @@ module.exports = {
                     }
                 }]
             },
+            // SCSS
             {
-                test: /\.module\.s(a|c)ss$/,
+                test: /\.module\.scss$/,
                 loader: [
                     isDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader,
                     {
@@ -44,8 +55,8 @@ module.exports = {
                 ]
             },
             {
-                test: /\.s(a|c)ss$/,
-                exclude: /\.module.(s(a|c)ss)$/,
+                test: /\.scss$/,
+                exclude: /\.module.(scss)$/,
                 loader: [
                     isDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader,
                     'css-loader',
@@ -85,7 +96,12 @@ module.exports = {
                         }
                     }
                 ]
-            }
+            },
+            {
+                test: /\.ts$/,
+                exclude: /node_modules/,
+                loader: 'ts-loader',
+            },
         ]
     },
     plugins: [
@@ -102,9 +118,7 @@ module.exports = {
         })
     ],
     resolve: {
-        extensions: ['.js', '.scss', '.gif', '.png', '.jpg', '.jpeg', '.svg']
+        extensions: ['.js', '.ts', '.scss', '.gif', '.png', '.jpg', '.jpeg', '.svg']
     },
-    output: {
-        filename: isDevelopment ? '[name].js' : '[name].[hash].js'
-    }
+
 }
