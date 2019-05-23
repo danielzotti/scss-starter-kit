@@ -1,11 +1,7 @@
 import styles from './app.module';
 
-const obj = {
-    hello: 'World'
-}
+import daniel from './images/avatar';
 
-const {
-    hello
-} = obj
+console.log(daniel);
 
-console.log('hello')
+document.querySelector('#root').innerHTML = '<img src=\'' + daniel + '\'>';
