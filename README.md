@@ -6,4 +6,4 @@ L'introduzione di Typescript è basata su questo [articolo](https://appdividend.
 
 L'importazione dei file SCSS nel typescript è basata su questo [articolo](https://medium.com/@sapegin/css-modules-with-typescript-and-webpack-6b221ebe5f10) di Artem Sapegin.
 
-Link al repository: [https://github.com/danielzotti/scss-starter-kit/]
+Link al repository: https://github.com/danielzotti/scss-starter-kit
