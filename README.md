@@ -1,4 +1,4 @@
-#CREDITS:
+# CREDITS:
 
 Il progetto principale è basato sull'[articolo](https://developerhandbook.com/webpack/webpack-4-from-absolute-scratch/) di Jon Preece.
 
