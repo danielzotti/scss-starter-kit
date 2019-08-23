@@ -9,7 +9,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     font-family: $font-family-title;
     line-height: 1.2;
     color: $font-title-color;
-    font-weight: $font-weight-extrabold;
+    font-weight: $font-weight-bold;
     margin: $margin-medium 0;
 }
 
@@ -31,9 +31,10 @@ a {
 
 ul, ol {
     margin: $margin-default 0;
+    margin-left: $margin-big;
+    margin-bottom: $margin-medium;
     list-style-position: outside;
     padding-left: $margin-default;
-    margin-left: $margin-default;
 
     li {
         margin-bottom: $margin-default;
@@ -139,3 +140,87 @@ h6 {
 }
 
 
+// BUTTONS
+
+@import "../abstracts/mixins";
+
+$btn-font-size: 13px !default;
+$btn-border-width: 2px !default;
+$btn-padding-top-bottom: $btn-font-size / 2 !default;
+$btn-padding-left-right: 20px !default;
+$btn-padding: $btn-padding-top-bottom $btn-padding-left-right !default;
+$btn-border-radius: ($btn-font-size + ($btn-padding-top-bottom * 2)) !default;
+$btn-text-transform: uppercase !default;
+
+// DEFAULT
+$btn--default-bg-color: $primary !default;
+$btn--default-bg-color--hover: $primary-light !default;
+$btn--default-bg-color--click: $primary-dark !default;
+$btn--default-color: $primary-text !default;
+$btn--default-color--hover: $primary-text !default;
+$btn--default-color--click: $primary-text !default;
+$btn--default-border-color: $primary-dark !default;
+$btn--default-border-color--hover: $primary-dark !default;
+$btn--default-border-color--click: $primary-dark !default;
+
+// DEFAULT ALT
+$btn--default-alt-bg-color: $primary-text !default;
+$btn--default-alt-bg-color--hover: $primary-text !default;
+$btn--default-alt-bg-color--click: $primary-text !default;
+$btn--default-alt-color: $primary !default;
+$btn--default-alt-color--hover: $primary-light !default;
+$btn--default-alt-color--click: $primary-dark !default;
+$btn--default-alt-border-color: $primary !default;
+$btn--default-alt-border-color--hover: $primary-light !default;
+$btn--default-alt-border-color--click: $primary-dark !default;
+
+// ACTION
+$btn--action-bg-color: $secondary !default;
+$btn--action-bg-color--hover: $secondary-light !default;
+$btn--action-bg-color--click: $secondary-dark !default;
+$btn--action-color: $secondary-text !default;
+$btn--action-color--hover: $secondary-text !default;
+$btn--action-color--click: $secondary-text !default;
+$btn--action-border-color: $secondary !default;
+$btn--action-border-color--hover: $secondary-light !default;
+$btn--action-border-color--click: $secondary-dark !default;
+
+// ACTION ALT
+$btn--action-alt-bg-color: $secondary-text !default;
+$btn--action-alt-bg-color--hover: $secondary-text !default;
+$btn--action-alt-bg-color--click: $secondary-text !default;
+$btn--action-alt-color: $secondary !default;
+$btn--action-alt-color--hover: $secondary-light !default;
+$btn--action-alt-color--click: $secondary-dark !default;
+$btn--action-alt-border-color: $secondary !default;
+$btn--action-alt-border-color--hover: $secondary-light !default;
+$btn--action-alt-border-color--click: $secondary-dark !default;
+
+/**umb_name:Button*/
+.btn {
+    @include btn__base($btn-border-width, $btn-border-radius, $btn-padding-top-bottom, $btn-padding-left-right, $btn-text-transform, $btn-font-size);
+}
+
+/**umb_name:Button default*/
+.btn-default {
+    @include btn__base($btn-border-width, $btn-border-radius, $btn-padding-top-bottom, $btn-padding-left-right, $btn-text-transform, $btn-font-size);
+    @include btn__colors($btn--default-color,$btn--default-bg-color,$btn--default-border-color);
+}
+
+/**umb_name:Button default alternative*/
+.btn-default-alt {
+    @include btn__base($btn-border-width, $btn-border-radius, $btn-padding-top-bottom, $btn-padding-left-right, $btn-text-transform, $btn-font-size);
+    @include btn__colors($btn--default-alt-color,$btn--default-alt-bg-color,$btn--default-alt-border-color);
+}
+
+/**umb_name:Button action*/
+.btn-action {
+    @include btn__base($btn-border-width, $btn-border-radius, $btn-padding-top-bottom, $btn-padding-left-right, $btn-text-transform, $btn-font-size);
+    @include btn__colors($btn--action-color,$btn--action-bg-color,$btn--action-border-color);
+}
+
+/**umb_name:Button action alternative*/
+.btn-action-alt {
+    @include btn__base($btn-border-width, $btn-border-radius, $btn-padding-top-bottom, $btn-padding-left-right, $btn-text-transform, $btn-font-size);
+    @include btn__colors($btn--action-alt-color,$btn--action-alt-bg-color,$btn--action-alt-border-color);
+}

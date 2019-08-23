@@ -1,0 +1,110 @@
+﻿@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+// TEASER
+$teaser-font-color: $font-color !default;
+$teaser-border-width: $border-width-base !default;
+$teaser-border-color: $primary-dark !default;
+$teaser-padding-bottom: $margin-medium !default;
+$teaser-margin-top-bottom: $margin-default !default;
+$teaser-transform--hover: translate3d(-5px,0px,0px) !default;
+
+$teaser__domain-color: $secondary !default;
+$teaser__category-color: $tertiary !default;
+$teaser__date-color: $quaternary !default;
+$teaser__location-color: $quaternary !default;
+
+$teaser__provider-line-height: 1.2 !default;
+$teaser__date-line-height: 1.2 !default;
+
+// TEASER LIST
+$teaser-list__title-margin-bottom: $margin-default !default;
+$teaser-list__content-margin-bottom: $margin-medium !default;
+$teaser-list__button-align: center !default;
+
+.teaser-list {
+    
+}
+
+.teaser-list__title {
+    @extend .h4;
+    margin: 0;
+    margin-bottom: $teaser-list__title-margin-bottom;
+}
+.teaser-list__content {
+    margin-bottom: $teaser-list__content-margin-bottom;
+}
+.teaser-list__button {
+    text-align: $teaser-list__button-align;
+}
+
+.teaser {
+    position: relative;
+    display: block;
+    border-bottom: $teaser-border-width solid $teaser-border-color;
+    padding-bottom: $teaser-padding-bottom;
+    margin-top: $teaser-margin-top-bottom;
+
+    @include override-link {
+        text-decoration: none;
+        color: $teaser-font-color;
+    }
+}
+a.teaser {
+    transition: transform 0.2s ease-in-out;
+
+    &:hover {
+        transform: $teaser-transform--hover;
+    }
+}
+
+.teaser__label {
+    @extend .text-small;
+    @include  text-overflow-ellipsis();
+}
+
+.teaser__category {
+    text-transform:uppercase;
+    color: $teaser__category-color;
+}
+.teaser__domain {
+    color: $teaser__domain-color;
+}
+.teaser__date {
+    text-transform: uppercase;
+    color: $teaser__location-color;
+}
+.teaser__location {
+    text-transform: uppercase;
+    color: $teaser__date-color;
+}
+
+.teaser__title {
+    @extend .h4;
+    margin: 0;
+}
+
+.teaser__content {
+    @extend .text-small;
+    line-height: $teaser__provider-line-height;
+}
+
+// VARIATIONS
+.teaser--resource {
+    @extend .teaser;
+}
+
+.teaser--event {
+    @extend .teaser;
+
+    .teaser__title {
+        font-weight: $font-weight-regular;
+    }
+}
+.teaser--big {
+
+    .teaser__title {
+        @extend .h2;
+        margin:0;
+    }
+}

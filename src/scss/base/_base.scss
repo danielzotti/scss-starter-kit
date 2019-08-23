@@ -47,6 +47,10 @@ p {
     @include font-size-scaling($font-size-p-small);
 }
 
+.text-normal {
+    @include font-size-scaling($font-size-p-normal);
+}
+
 img {
     max-width:100%;
 }

@@ -1,0 +1,5 @@
+﻿@mixin override-link() {
+    &, &:hover, &:active, &:focus, &:visited {
+        @content;
+    }
+}

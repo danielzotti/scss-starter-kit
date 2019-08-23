@@ -1,0 +1,112 @@
+﻿@mixin btn($btn-border-width: 2px, $btn-border-radius: 0, $btn-padding-top-bottom: 10px, $btn-padding-left-right: 20px, $btn-text-transform: none, $btn-font-size: 16px) {
+    
+    // BASE
+    @include btn__base($btn-border-width, $btn-border-radius, $btn-padding-top-bottom, $btn-padding-left-right, $btn-text-transform, $btn-font-size);
+    // display: inline-block;
+    // text-align: center;
+    // white-space: nowrap;
+    // vertical-align: middle;
+    // touch-action: manipulation;
+    // cursor: pointer;
+    // user-select: none;
+    // background-image: none;
+    // border-width: $btn-border-width;
+    // border-color: transparent;
+    // border-radius: $btn-border-radius;
+    // border-style: solid;
+    // text-decoration: none;
+    // padding: $btn-padding-top-bottom $btn-padding-left-right;
+    // text-transform: $btn-text-transform;
+    // font-size: $btn-font-size;
+
+    &:active,
+    &:hover,
+    &:focus {
+        outline: none;
+        text-decoration: none;
+    }
+
+    &:active {
+        /*box-shadow: inset 5px 5px 20px -15px rgba(0,0,0,0.75);*/
+    }
+
+    &[disabled] {
+        cursor: not-allowed;
+    }
+
+    &.btn--big {
+        font-size: $btn-font-size * 1.2;
+        padding: ($btn-padding-top-bottom * 1.2) ($btn-padding-left-right * 1.2);
+    }
+
+    &.btn--small {
+        font-size: $btn-font-size * 0.8;
+        padding: ($btn-padding-top-bottom * 0.8) ($btn-padding-left-right * 0.8);
+    }
+
+    &.btn--block {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@mixin btn__base($btn-border-width: 2px, $btn-border-radius: 0, $btn-padding-top-bottom: 10px, $btn-padding-left-right: 20px, $btn-text-transform: none, $btn-font-size: 16px) {
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    user-select: none;
+    background-image: none;
+    border-width: $btn-border-width;
+    border-color: transparent;
+    border-radius: $btn-border-radius;
+    border-style: solid;
+    text-decoration: none;
+    padding: $btn-padding-top-bottom $btn-padding-left-right;
+    text-transform: $btn-text-transform;
+    font-size: $btn-font-size;
+    outline:none;
+}
+
+@mixin btn__colors($color,$bg-color,$border-color) {
+    background-color: $bg-color;
+    color: $color;
+    border-color: $border-color;
+}
+
+@mixin btn__variation($color,$bg-color,$border-color,$color--hover,$bg-color--hover,$border-color--hover,$color--click,$bg-color--click,$border-color--click) {
+    // VARIATIONS
+    &,
+    &:focus,
+    &:active,
+    &:visited {
+        // background-color: $bg-color;
+        // color: $color;
+        // border-color: $border-color;
+        @include btn__colors($color,$bg-color,$border-color);
+    }
+
+    &:hover {
+        // background-color: $bg-color--hover;
+        // color: $color--hover;
+        // border-color: $border-color--hover;
+        @include btn__colors($color--hover,$bg-color--hover,$border-color--hover);
+    }
+
+    &:active {
+        // background-color: $bg-color--click;
+        // color: $color--click;
+        // border-color: $border-color--click;
+        @include btn__colors($color--click,$bg-color--click,$border-color--click);
+    }
+
+    &[disabled] {
+        // background-color: transparentize($bg-color, 0.2);
+        // border-color: transparentize($border-color, 0.2);
+        // color: transparentize($color,0.5);
+        @include btn__colors(transparentize($color, 0.2),transparentize($bg-color, 0.2),transparentize($border-color, 0.2));
+    }
+}

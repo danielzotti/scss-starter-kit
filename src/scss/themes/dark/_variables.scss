@@ -1,0 +1,44 @@
+﻿@import "variables-colors";
+
+// BOOTSTRAP OVERRIDE
+$screen-xs: 480px;
+$screen-sm: 900px;
+$screen-md: 1200px;
+$screen-lg: 1500px;
+
+$grid-float-breakpoint: $screen-sm;
+$grid-float-breakpoint-max: ($grid-float-breakpoint - 1);
+
+$grid-gutter-width: 30px;
+
+$container-sm: $screen-sm - $grid-gutter-width;
+$container-md: $screen-md - $grid-gutter-width;
+$container-lg: $screen-lg - $grid-gutter-width;
+
+$xxs-max: $screen-xs - 1;
+$xs-min: $screen-xs;
+$xs-max: $screen-sm - 1;
+$sm-min: $screen-sm;
+$sm-max: $screen-md - 1;
+$md-min: $screen-md;
+$md-max: $screen-lg - 1;
+$lg-min: $screen-lg;
+
+// MARGIN/PADDING
+$margin-default: 15px !default;
+$margin-small: $margin-default / 3 !default;
+$margin-medium: $margin-default * 2 !default;
+$margin-big: $margin-default * 4 !default;
+$margin-extrabig: $margin-default * 6 !default;
+
+// SHADOWS AND BORDER RADIUS
+$border-radius-base: 5px !default;
+$border-width-base: 2px !default;
+
+// BASE COLORS
+$font-color: $primary-default-text !default;
+$font-title-color: $primary-default-text !default;
+$bg-color: $primary-default-bg !default;
+
+$link-color: $primary-text !default;
+$link-hover-color: $secondary !default;

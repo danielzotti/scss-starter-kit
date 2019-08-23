@@ -1,29 +1,38 @@
-﻿/* THEME */
-// Qui vengono inserite le variabili che vanno a sovrascrivere le variabili di default
-// @import "themes/dark";
-@import "themes/default";
+﻿/* THEME - le variabili che vanno a sovrascrivere le variabili di default*/
+/*@import "themes/dark";*/
+/*@import "themes/default";*/
 
-/* ABSTRACTS */
+/* ABSTRACTS - solo variabili, funzioni e mixins (no classi) */
 @import "abstracts/variables";
 @import "abstracts/mixins";
 
-/* FONTS */
+/* FONTS - i font da caricare (no variabili, proprio i font face) */
 @import "base/fonts";
 
-/* VENDOR */
+/* VENDOR - terze parti (bootstrap) */
 @import "vendors/bootstrap";
 
-/* BASE */
+/* BASE - tag HTML di base */
 @import "base/typography";
 @import "base/base";
 
-/* COMMON */
+/* COMMON - classi da estendere */
 @import "common/section";
-@import "common/button";
 @import "common/gradients";
 
-/* COMPONENTS */
-@import "components/banner";
+/* COMPONENTS - componenti da riutilizzare così come sono */
+@import "components/button";
+@import "components/cookie";
+@import "components/pagination";
+
+// Gli elementi qui sotto (e i font) verranno modificati in ogni sito web
+
+/* LAYOUT - elementi di layout (navbar, footer e simili) */
+@import "layout/teaser";
+@import "layout/navbar";
+@import "layout/footer";
 
 /* PAGES */
 @import "pages/home";
+@import "pages/catalogue";
+@import "pages/events";

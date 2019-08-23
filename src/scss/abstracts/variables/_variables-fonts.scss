@@ -1,25 +1,26 @@
 ﻿// FONTS
-$font-family-title: 'Lato', Verdana, sans-serif !default;
-$font-family: 'Lato', Verdana, sans-serif !default;
+$font-family-title: 'Open Sans', Verdana, sans-serif !default;
+$font-family: 'Open Sans', Verdana, sans-serif !default;
 $font-weight-light: 300 !default;
 $font-weight-regular: 400 !default;
 $font-weight-bold: 700 !default;
 $font-weight-extrabold: 900 !default;
 
-$font-size-base:15px !default;
+$font-size-base: 16px !default;
 
 $font-scaling-md: 0.85 !default;
 $font-scaling-sm: 0.75 !default;
 $font-scaling-xs: 0.80 !default;
 
-$font-size-h1: 60px !default;
-$font-size-h2: 40px !default;
-$font-size-h3: 30px !default;
-$font-size-h4: 25px !default;
-$font-size-h5: 20px !default;
-$font-size-h6: 18px !default;
+$font-size-h1: 40px !default;
+$font-size-h2: 30px !default;
+$font-size-h3: 22px !default;
+$font-size-h4: 20px !default;
+$font-size-h5: 16px !default;
+$font-size-h6: 13px !default;
 
-$font-size-p-big: 20px !default;
 $font-size-p-normal: $font-size-base !default;
-$font-size-p-small: 12px !default;
-$font-size-p-extrasmall: 10px !default;
+$font-size-p-big: $font-size-p-normal * 1.25 !default;
+$font-size-p-small: $font-size-p-normal * 0.75 !default;
+$font-size-p-extrasmall: $font-size-p-normal * 0.625 !default;
+

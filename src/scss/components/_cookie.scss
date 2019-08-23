@@ -1,0 +1,21 @@
+﻿@import "../abstracts/variables";
+
+$cookie-short-bg-color: $primary !default;
+$cookie-short-color: $primary-text !default;
+
+$cookie-button-bg-color: $secondary !default;
+$cookie-button-color: $secondary-text !default;
+
+#ps-cookie-short {
+    background-color: $cookie-short-bg-color;
+    color: $cookie-short-color;
+}
+
+.ps-cookie-button {
+    background-color: $cookie-button-bg-color;
+    color: $cookie-button-color !important;
+}
+#ps-modal-close {
+    cursor:pointer;
+    display:inline-block;
+}

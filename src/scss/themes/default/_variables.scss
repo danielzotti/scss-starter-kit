@@ -1,0 +1,47 @@
+﻿@import "variables-common";
+@import "variables-colors";
+
+// BOOTSTRAP OVERRIDE
+// NB: provvisoriamente non si può mettere nei temi
+$screen-xs: 480px;
+$screen-sm: 768px;
+$screen-md: 992px;
+$screen-lg: 1200px;
+
+$grid-float-breakpoint: $screen-sm;
+$grid-float-breakpoint-max: ($grid-float-breakpoint - 1);
+
+$grid-gutter-width: 30px;
+
+$container-sm: $screen-sm - $grid-gutter-width;
+$container-md: $screen-md - $grid-gutter-width;
+$container-lg: $screen-lg - $grid-gutter-width;
+
+$xxs-max: $screen-xs - 1;
+$xs-min: $screen-xs;
+$xs-max: $screen-sm - 1;
+$sm-min: $screen-sm;
+$sm-max: $screen-md - 1;
+$md-min: $screen-md;
+$md-max: $screen-lg - 1;
+$lg-min: $screen-lg;
+
+// MARGIN/PADDING
+$margin-default: 15px !default;
+$margin-small: $margin-default / 3;
+$margin-medium: $margin-default * 2;
+$margin-big: $margin-default * 4;
+$margin-extrabig: $margin-default * 6;
+
+// SHADOWS AND BORDER RADIUS
+$border-radius-base: 5px;
+$border-width-base: 2px;
+
+// BASE COLORS
+$font-color: $primary-default-text;
+$font-title-color: $primary-default-text;
+$bg-color: $primary-default-bg;
+
+$link-color: $primary-text;
+$link-hover-color: $secondary;
+

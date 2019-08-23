@@ -1,12 +1,2 @@
-﻿@import "variables-colors";
-
-// MARGIN/PADDING
-$margin-default: 15px !default;
-$margin-small: $margin-default / 3 !default;
-$margin-medium: $margin-default * 2 !default;
-$margin-big: $margin-default * 4 !default;
-$margin-extrabig: $margin-default * 6 !default;
-
-// SHADOWS AND BORDER RADIUS
-$border-radius-base: 10px !default;
-$border-width-base: 5px !default;
+﻿@import "common/variables-gradient";
+@import "common/variables-section";

@@ -1,18 +1,48 @@
-﻿// MAIN COLORS
-$primary-default-bg: #FFF !default;
-$primary-default-text: #000 !default;
+﻿// CUSTOM COLORS
+$white: #FFF;
+$black: #000;
 
-$primary: #568BC9 !default;
-$primary-light: #E7EEF4 !default;
-$primary-dark: #1668c6 !default;
-$primary-text: #FFF !default;
+$gray: #f9f9f9;
+$gray-dark: #c6c6c6;
+$gray-light: #ffffff;
 
-$secondary: #71429A !default;
-$secondary-light: #A887C6 !default;
-$secondary-dark: #5d0ca5 !default;
-$secondary-text: #FFF !default;
+$fucsia: #dd056a;
+$fucsia-dark: #a50040;
+$fucsia-light: #ff5698;
 
-$tertiary: #F47D20 !default;
-$tertiary-light: #f5b786 !default;
-$tertiary-dark: #a94a00 !default;
-$tertiary-text: #FFF !default;
+$green: #5a7335;
+$green-dark: 'none';
+$green-light: 'none';
+
+$orange: #d5521e;
+$orange-dark: 'none';
+$orange-light: 'none';
+
+// MAIN COLORS
+$primary-default-bg: $white;
+$primary-default-text: $black;
+
+$primary: $gray;
+$primary-light: $gray-light;
+$primary-dark: $gray-dark;
+$primary-text: $black;
+
+$secondary: $fucsia;
+$secondary-light: $fucsia-light;
+$secondary-dark: $fucsia-dark;
+$secondary-text: $white;
+
+$tertiary: $orange;
+$tertiary-light: $orange-light;
+$tertiary-dark: $orange-dark;
+$tertiary-text: $black;
+
+$tertiary: $green;
+$tertiary-light: $green-light;
+$tertiary-dark: $green-dark;
+$tertiary-text: $black;
+
+$quaternary: $orange;
+$quaternary-light: $orange-light;
+$quaternary-dark: $orange-dark;
+$quaternary-text: $black;

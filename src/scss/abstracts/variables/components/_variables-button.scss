@@ -1,0 +1,54 @@
+﻿@import "../variables-colors";
+
+// BASE
+$btn-font-size: 13px !default;
+$btn-border-width: 2px !default;
+$btn-padding-top-bottom: $btn-font-size / 2 !default;
+$btn-padding-left-right: 20px !default;
+$btn-padding: $btn-padding-top-bottom $btn-padding-left-right !default;
+$btn-border-radius: ($btn-font-size + ($btn-padding-top-bottom * 2)) !default;
+$btn-text-transform: uppercase !default;
+
+// DEFAULT
+$btn--default-bg-color: $primary !default;
+$btn--default-bg-color--hover: $primary-light !default;
+$btn--default-bg-color--click: $primary-dark !default;
+$btn--default-color: $primary-text !default;
+$btn--default-color--hover: $primary-text !default;
+$btn--default-color--click: $primary-text !default;
+$btn--default-border-color: $primary !default;
+$btn--default-border-color--hover: $primary-light !default;
+$btn--default-border-color--click: $primary-dark !default;
+
+// DEFAULT ALT
+$btn--default-alt-bg-color: $primary-text !default;
+$btn--default-alt-bg-color--hover: $primary-text !default;
+$btn--default-alt-bg-color--click: $primary-text !default;
+$btn--default-alt-color: $primary !default;
+$btn--default-alt-color--hover: $primary-light !default;
+$btn--default-alt-color--click: $primary-dark !default;
+$btn--default-alt-border-color: $primary !default;
+$btn--default-alt-border-color--hover: $primary-light !default;
+$btn--default-alt-border-color--click: $primary-dark !default;
+
+// ACTION
+$btn--action-bg-color: $secondary !default;
+$btn--action-bg-color--hover: $secondary-light !default;
+$btn--action-bg-color--click: $secondary-dark !default;
+$btn--action-color: $secondary-text !default;
+$btn--action-color--hover: $secondary-text !default;
+$btn--action-color--click: $secondary-text !default;
+$btn--action-border-color: $secondary !default;
+$btn--action-border-color--hover: $secondary-light !default;
+$btn--action-border-color--click: $secondary-dark !default;
+
+// ACTION ALT
+$btn--action-alt-bg-color: $secondary-text !default;
+$btn--action-alt-bg-color--hover: $secondary-text !default;
+$btn--action-alt-bg-color--click: $secondary-text !default;
+$btn--action-alt-color: $secondary !default;
+$btn--action-alt-color--hover: $secondary-light !default;
+$btn--action-alt-color--click: $secondary-dark !default;
+$btn--action-alt-border-color: $secondary !default;
+$btn--action-alt-border-color--hover: $secondary-light !default;
+$btn--action-alt-border-color--click: $secondary-dark !default;

@@ -1,0 +1,36 @@
+﻿@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+/* PAGE */
+.events-page {
+    .section__main-content {
+        margin-bottom: $margin-big;
+        @media(min-width:$md-min){
+            max-width:80%;
+        }
+    }
+
+    .section__main-content__title {
+        @extend .h1;
+        margin-top: 0;
+    }
+
+    .section__highlighted-events {
+        margin-bottom: $margin-medium;
+    }
+
+    .section__next-events {
+        margin-bottom: $margin-medium;
+    }
+
+    .section__archived-events {
+        margin-top:$margin-big;
+        .teaser-list__title {
+            text-align:center;
+        }
+        .teaser__title {
+            @extend .text-normal;
+            margin:0;
+        }
+    }
+}

@@ -1,17 +1,2 @@
-﻿// SECTION
-$section-padding: $margin-big;
-$section__title-margin-bottom: $margin-big;
-
-// BUTTON
-$btn-font-size: 15px;
-
-$btn-default-bg: white;
-$btn-default-color: black;
-$btn-default-border-color: black;
-$btn-default-margin: 5px;
-$btn-default-padding-top-bottom: 10px;
-$btn-default-padding-left-right: 20px;
-
-$btn-alt-color: white;
-$btn-alt-bg: black;
-$btn-alt-border-color: black;
+﻿@import "components/variables-button";
+@import "components/variables-cookie";
